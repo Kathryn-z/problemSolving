@@ -23,7 +23,11 @@
 # TODO fill in the following with your own implementation
 
 def checkPalindrome(s) -> bool:
-    return False
+    n = len(s)
+    for i in range(n):
+        if (s[i] != s[n-1-i]):
+            return False
+    return True
 
 
 # TODO fill in the following with your partner's implementation

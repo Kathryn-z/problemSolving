@@ -20,7 +20,15 @@
 # TODO add your own implementation below
 
 def uniqueInts(nums) -> int:
-    return -1
+    count = 0
+    unique = []
+
+    for i in range(len(nums)):
+        if (nums[i] not in unique):
+            count+=1
+            unique.append(nums[i])
+        
+    return count
 
 
 # TODO add your partner's implementation here
