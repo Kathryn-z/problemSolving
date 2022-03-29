@@ -37,11 +37,10 @@ def uniqueInts(nums) -> int:
 def uniqueInts(nums) -> int:
     return len(set(nums))
 
-
 # TODO add your partner's implementation here
 
 def partnerUniqueInts(nums) -> int:
-    return -1
+    return len(set(nums))
 
 
 # TODO discuss runtime, space usage, and create a solution you are both happy

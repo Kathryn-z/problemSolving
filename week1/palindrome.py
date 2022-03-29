@@ -29,11 +29,13 @@ def checkPalindrome(s) -> bool:
             return False
     return True
 
+# O(n)
 
 # TODO fill in the following with your partner's implementation
 
 def partnerCheckPalindrome(s) -> bool:
-    return False
+    return s == s[::-1]
+# O(n)
 
 # TODO discuss the runtime, space usage, and possible improvements to the
 # solutions you came up with
