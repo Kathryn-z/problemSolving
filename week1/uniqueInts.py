@@ -20,15 +20,22 @@
 # TODO add your own implementation below
 
 def uniqueInts(nums) -> int:
-    count = 0
-    unique = []
+    low = 0
+    high = 0
 
-    for i in range(len(nums)):
-        if (nums[i] not in unique):
-            count+=1
-            unique.append(nums[i])
-        
-    return count
+    while (high < len(nums)):
+        nums[low] = nums[high]
+        if (low > 0 and nums[low] == nums[low-1]):
+            low-=1
+        low+=1
+        high+=1
+
+    return low
+
+# TODO my second implementation below
+
+def uniqueInts(nums) -> int:
+    return len(set(nums))
 
 
 # TODO add your partner's implementation here
